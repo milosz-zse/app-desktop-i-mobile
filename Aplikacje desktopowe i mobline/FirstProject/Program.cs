@@ -16,8 +16,10 @@ namespace FirstProject
             Console.WriteLine("Prętkość to km\\h");//zanak "\ " jest specjany  i program nie działa jak użyje się 2 razy \ to zadziała
             Console.WriteLine(@"Prętkość to km\h");//można zamiast 2 razy \ można wstawić @ przed tekstem 
 
-            int liczba=5;
+            int LiczbaCalkowita=5;
+            double LiczbaRzeczywista=6.6;
 
+            
 
         }
     }
