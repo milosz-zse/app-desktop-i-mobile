@@ -18,6 +18,11 @@ namespace FirstProject
 
             int LiczbaCalkowita=5;
             double LiczbaRzeczywista=6.6;
+
+            Person FirstPerson = new Person;
+            Program.ShowInfo();
+
+            
                         
         }
     }
