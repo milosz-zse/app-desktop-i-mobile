@@ -6,24 +6,24 @@ using System.Threading.Tasks;
 
 namespace FirstProject
 {
-    class FirstPerson
+    class Person
     {
         // ctrl k d układa ładnie kod
-        private string person;
-        private string LastName;
+        private string name;
+        private string surname;
         private int age;
 
-        public FirstPerson() // ctor i 2 razy tab aby zorbic konstruktor 
+        public Person() // ctor i 2 razy tab aby zorbic konstruktor 
         {
-            person = "adam";// crtl r r wtedy zamieniasz wszyskie zaznaczone nazy 
-            LastName = "Michta";
+            name = "Miłosz";// crtl r r wtedy zamieniasz wszyskie zaznaczone nazy 
+            surname = "Michta";
             age = 30;
 
         }
-        public FirstPerson(string i, string n, int w)
+        public Person(string i, string n, int w)
         {
-            i = person;
-            n = LastName;
+            i = name;
+            n = surname;
             w = age;
 
         }
@@ -31,11 +31,26 @@ namespace FirstProject
         {
             Console.WriteLine("********************************************");
             Console.WriteLine($"Imie:{name}");
-            Console.WriteLine($"nazwisko:{LastName}");
+            Console.WriteLine($"nazwisko:{surname}");
             Console.WriteLine($"wiek:{age}");
             Console.WriteLine("********************************************");
 
         }
+        public void SetSurnname(string newSurname)
+        {
+            if (newSurname != "")
+            {
+                surname = newSurname;
+            }
+            else 
+            {
+               // throw naw Excrption("łze nazwisko")
+            }
 
+        }
+        public string GetSurname()
+        {
+            return surname;
+        }
     }
 }

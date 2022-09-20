@@ -19,11 +19,20 @@ namespace FirstProject
             int LiczbaCalkowita=5;
             double LiczbaRzeczywista=6.6;
 
-            Person FirstPerson = new Person;
-            Program.ShowInfo();
+            Person FirstPerson = new Person();
+            FirstPerson.ShowInfo();
 
-            
-                        
+            Person seconPerson= FirstPerson;
+            seconPerson.ShowInfo();
+
+            Person thirdPerson = new Person("ala", "kowalska", 52);
+            thirdPerson.ShowInfo();
+
+            thirdPerson.SetSurnname("nowakowska");
+            thirdPerson.ShowInfo();
+
+            string data = thirdPerson.GetSurname;
+
         }
     }
 }
