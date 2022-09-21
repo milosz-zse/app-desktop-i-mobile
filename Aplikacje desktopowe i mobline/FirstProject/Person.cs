@@ -53,7 +53,7 @@ namespace FirstProject
             name = "Miłosz";// crtl r r wtedy zamieniasz wszyskie zaznaczone nazy 
             surname = "Michta";
             age = 30;
-            int x =name.Length// przypisanie do x długosci name
+            int aEdasdx = name.Length;// przypisanie do x długosci name
 
         }
         public Person(string i, string n, int w)
