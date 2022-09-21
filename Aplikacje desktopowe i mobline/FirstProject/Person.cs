@@ -9,15 +9,51 @@ namespace FirstProject
     class Person
     {
         // ctrl k d układa ładnie kod
+
         private string name;
-        private string surname;
+        public string Name
+        {
+            private set
+            {
+                name = value;
+            }
+            get
+            {
+                return name;
+            }
+            
+        }
+
         private int age;
+        public int Age// properties to jest
+        {
+            get
+            {
+                return age;
+            }
+        }
+        private string surname;
+        public string Surname// properties to jest
+        {
+            set
+            {
+                if (value != "")
+                    surname = value;
+            }
+            get
+            {
+                return surname;
+            }
+        }
+        private int height;
+        private int Height { get; set; }
 
         public Person() // ctor i 2 razy tab aby zorbic konstruktor 
         {
             name = "Miłosz";// crtl r r wtedy zamieniasz wszyskie zaznaczone nazy 
             surname = "Michta";
             age = 30;
+            int x =name.Length// przypisanie do x długosci name
 
         }
         public Person(string i, string n, int w)
@@ -33,7 +69,7 @@ namespace FirstProject
             Console.WriteLine($"Imie:{name}");
             Console.WriteLine($"nazwisko:{surname}");
             Console.WriteLine($"wiek:{age}");
-            Console.WriteLine("********************************************");
+            Console.WriteLine("*******************************************");
 
         }
         public void SetSurnname(string newSurname)

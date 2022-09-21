@@ -31,7 +31,13 @@ namespace FirstProject
             thirdPerson.SetSurnname("nowakowska");
             thirdPerson.ShowInfo();
 
-            string data = thirdPerson.GetSurname;
+
+            //string data = thirdPerson.GetSurname;
+            //dana = thirdPerson.surname;
+
+            //thirdPerson.Age=50 jest źle
+            int d = thirdPerson.Age;
+
 
         }
     }
