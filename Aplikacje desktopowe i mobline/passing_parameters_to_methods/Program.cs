@@ -1,12 +1,13 @@
 ﻿using System;
 
-namespace passing_parameters_to_methods
+namespace PassingParametersToMethod
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello "); 
+            // TestingParameters testingParamteters = new TestingParameters();
+            // TestingParameters.Test1();
         }
     }
 }
