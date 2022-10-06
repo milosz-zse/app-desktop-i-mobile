@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace passing_parameters_to_methods
 {
+    struct PersonSturct 
+    {
+        public string name;
+        public string surname;
+        public int age;
+
+    }
     class TestingParameters
     {
-        #region "ref" and "out"
+       #region "ref" and "out"
         public void Test1()
         {
             byte number = 15;
@@ -27,16 +34,16 @@ namespace passing_parameters_to_methods
         private void ChangeValue(byte value)
         {
             Console.WriteLine("zmienna nubmer=" + value);
-            value=(byte)(value+10);
-             Console.WriteLine("zmienna nubmer=" + value);
-            
+            value = (byte)(value + 10);
+            Console.WriteLine("zmienna nubmer=" + value);
+
         }
-          private void ChangeValueV2( ref byte value)
+        private void ChangeValueV2(ref byte value)
         {
-           Console.WriteLine("zmienna nubmer=" + value);
-           value=(byte)(value+10);
-           Console.WriteLine("zmienna nubmer=" + value);
-            
+            Console.WriteLine("zmienna nubmer=" + value);
+            value = (byte)(value + 10);
+            Console.WriteLine("zmienna nubmer=" + value);
+
         }
         private int GetRandomNumber()
         {
@@ -47,7 +54,7 @@ namespace passing_parameters_to_methods
             value = new Random().Next();
         }
         #endregion
-        #region skrót
+       #region skrót
         // public TestingParameters()//ctor + tab+tab tworzy 
         // {
 
@@ -58,17 +65,26 @@ namespace passing_parameters_to_methods
         {
             Person person = new Person();
             person.ShowInfo();
-            GetPerson(person);
+            GetPerson(person)
             person.ShowInfo();
 
         }
-        private void GetPerson (Person p)
+        private void GetPerson(Person p)
         {
             p.ShowInfo();
             p.Age = 40;
             p.ShowInfo();
         }
 
+        #endregion
+
+        #region przekazywanie struktor 
+        public void test3()
+        {
+            PersonSturct ps = new PersonSturct();
+            ps.name = "adam";       
+
+        }
         #endregion
     }
 }
