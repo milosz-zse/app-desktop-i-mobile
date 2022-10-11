@@ -15,7 +15,7 @@ namespace passing_parameters_to_methods
     }
     class TestingParameters
     {
-       #region "ref" and "out"
+        #region "ref" and "out"
         public void Test1()
         {
             byte number = 15;
@@ -54,7 +54,7 @@ namespace passing_parameters_to_methods
             value = new Random().Next();
         }
         #endregion
-       #region skrót
+        #region skrót
         // public TestingParameters()//ctor + tab+tab tworzy 
         // {
 
@@ -82,9 +82,18 @@ namespace passing_parameters_to_methods
         public void test3()
         {
             PersonSturct ps = new PersonSturct();
-            ps.name = "adam";       
-
+            ps.name = "adam";
+            Console.WriteLine("pole name w test3 " + ps.name);
+            
+        }
+        private void GetPersonStuct(PersonSturct ps)
+        {
+            Console.WriteLine("pole name w test3 " + ps.name);
+            ps.name = "Ewa";
+            Console.WriteLine("pole name w test3 " + ps.name);
         }
         #endregion
+        
     }
 }
+
