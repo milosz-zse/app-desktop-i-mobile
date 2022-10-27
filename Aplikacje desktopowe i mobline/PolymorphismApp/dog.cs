@@ -11,8 +11,9 @@ namespace PolymorphismApp
       
             public Dog()//:base() ==to jest domyslne //C# może dziedziczyc tyko jedną klase
         {
-            name = "azor";
-            //age = 10;
+            name = "azor ";
+            //age = 10
+            type = "pies";//gdy tworzy sie obiekt type nadaje sie pies
         }
         public Dog(string name, byte age) : base()
         {
@@ -26,21 +27,17 @@ namespace PolymorphismApp
 
             // age = 2; krostruktor kopiujacy nie musi miec 
         }
-        public void ShowInfo()
-        {
-            Console.WriteLine("*********************************"); 
-            Console.WriteLine("pies o imieniu " + name + "ma " + age);
-            Console.WriteLine("*********************************");
-        }
+
         public void Bark()
         {
-            
-            Console.WriteLine("pies o imieniu" + name + "szczeka");
-          
+            Console.WriteLine("*********************************");
+            Console.WriteLine("pies o imieniu" + name + " szczeka");
         }
         public void ChasePostman()
         {
-            Console.WriteLine("pies o imi9eniu " + name + "goni listonosza");
+            Console.WriteLine("*********************************");
+            Console.WriteLine("pies o imi9eniu " + name + " goni listonosza");
+
         }
     }
 

@@ -6,46 +6,35 @@ using System.Threading.Tasks;
 
 namespace PolymorphismApp
 {
-    class Cat
+    class Cat:Animal
     {
-        private string name;
-        private byte age;
         public Cat()
         {
-            name = "puszek";
-            age = 10;
+            name = " puszek ";
+            // age = 10;
+            type = "kot";
         }
-        public Cat(string name, byte age)
+        public Cat(string name, byte age):base(name, age)
         {
-            this.name = name;
-            this.age = age;
+            type = "kot";
         }
-        public Cat(Cat CatToCopy)
+        public Cat(Cat CatToCopy):base (CatToCopy)
         {
-            name = CatToCopy.name;
-            age = CatToCopy.age;
+           
 
             // age = 2; krostruktor kopiujacy nie musi miec 
         }
-        public void ShowInfo()
-        {
-            Console.WriteLine("*********************************");
-            Console.WriteLine("kot o imieniu " + name + "ma " + age);
-            Console.WriteLine("*********************************");
-        }
+
         public void Meow()
         {
             Console.WriteLine("*********************************");
-            Console.WriteLine("kot o imieniu" + name + "miałczy");
-            Console.WriteLine("*********************************");
+            Console.WriteLine("kot o imieniu" + name + " miałczy");
         }
         public void ClaimOnTree()
         {
             Console.WriteLine("*********************************");
-
-            Console.WriteLine("kot o imieniu" + name + "wchodzi na dzrewo");
-            Console.WriteLine("*********************************");
+            Console.WriteLine("kot o imieniu" + name + " wchodzi na dzrewo");
+   
         }
-
-    }
+ }
 }
