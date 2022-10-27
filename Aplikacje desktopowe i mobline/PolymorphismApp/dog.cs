@@ -6,23 +6,25 @@ using System.Threading.Tasks;
 
 namespace PolymorphismApp
 {
-    class Dog
+    class Dog :Animal//w c# nie okresla sie czy dziedziczenie publiczne
     {
-        private string name;
-        private byte age ;
-            public Dog()
+      
+            public Dog()//:base() ==to jest domyslne //C# może dziedziczyc tyko jedną klase
         {
             name = "azor";
-            age = 10;
+            //age = 10;
         }
-        public Dog(string name, byte age)
+        public Dog(string name, byte age) : base()
         {
-            this.name = name;
-            this.age = age;
+      //      this.name = name;
+     //       this.age = age;
         }
-        public Dog(Dog dogToCopy)
+        public Dog(Dog dogToCopy) : base(dogToCopy)
         {
-            name = dogToCopy.name;
+       //     name = dogToCopy.name;
+        //    age = dogToCopy.age;
+
+            // age = 2; krostruktor kopiujacy nie musi miec 
         }
         public void ShowInfo()
         {

@@ -1,6 +1,7 @@
 ﻿using System;
 
 namespace PolymorphismApp
+    // dry dont repeat yourself
 {
     class Program
     {
@@ -11,7 +12,16 @@ namespace PolymorphismApp
 
 
             Dog thieDog = new Dog(secondDog);
-            
+
+            firstDog.ShowInfo();
+            secondDog.Bark();
+            thieDog.ChasePostman();
+
+            Cat firstCat = new Cat("Mruczek", 12);
+            firstCat.ShowInfo();
+            firstCat.Meow();
+            firstCat.ClaimOnTree();
+
         }
     }
 }
