@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace PolymorphismApp
-{
+{//DRY 
     class Dog :Animal//w c# nie okresla sie czy dziedziczenie publiczne
     {
       
@@ -36,8 +36,14 @@ namespace PolymorphismApp
         public void ChasePostman()
         {
             Console.WriteLine("*********************************");
-            Console.WriteLine("pies o imi9eniu " + name + " goni listonosza");
+            Console.WriteLine("pies o imieniu " + name + " goni listonosza");
 
+        }
+        public new/* new-świadome przesłonięcie */ void ShowInfo()
+        {
+            Console.WriteLine("*******************************");
+            Console.WriteLine("pies prezentuje");
+            Console.WriteLine(type + " " + name + "ma " + age);
         }
     }
 

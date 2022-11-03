@@ -30,10 +30,10 @@ namespace PolymorphismApp
             type = animalToCopy.type;
             // age = 2; krostruktor kopiujacy nie musi miec 
         }
-        public void ShowInfo()
+        public virtual void ShowInfo() /*dzieki virtual  sprawdzi czy np w dog nie ma tam leszpych rozwiazan jak sa tam o takiej samej nazwie  */
         {
             Console.WriteLine("*********************************");
-            Console.WriteLine(type   + name + "ma " + age);
+            Console.WriteLine(type + " "   + name + "ma " + age);
         }
     }
 }
