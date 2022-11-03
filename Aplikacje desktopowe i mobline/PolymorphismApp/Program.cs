@@ -21,7 +21,20 @@ namespace PolymorphismApp
             firstCat.ShowInfo();
             firstCat.Meow();
             firstCat.ClaimOnTree();
+            ShowInfoForDog(firstDog);
+            Animal animal = firstCat;
+            Animal animal = firstDog;
+            
+        }
+        static void ShowInfoForDog(Dog dog)
+        {
+            dog.ShowInfo();
+        }
+        static void ShowInfoForCat(Cat cat)
+        {
+            cat.ShowInfo();
 
         }
+       
     }
 }
