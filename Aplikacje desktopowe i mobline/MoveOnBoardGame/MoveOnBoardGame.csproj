@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AvailableField.cs" />
     <Compile Include="Board.cs" />
     <Compile Include="MoveDirection.cs" />
     <Compile Include="Player.cs" />

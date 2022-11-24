@@ -37,8 +37,10 @@ namespace MoveOnBoardGame
                 return currY;
             }
         }
-        public Player()
+        public Player(int startX ,int startY)
         {
+            currX = prevX= startX;
+            currY = prevY = startY;
             Draw();
         }
 
