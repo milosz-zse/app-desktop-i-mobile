@@ -45,7 +45,8 @@
   <ItemGroup>
     <Compile Include="AvailableField.cs" />
     <Compile Include="Board.cs" />
-    <Compile Include="MoveDirection.cs" />
+    <Compile Include="Enums\CollisionType.cs" />
+    <Compile Include="Enums\MoveDirection.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading;
-
+using MoveOnBoardGame.Enums;
 
 namespace MoveOnBoardGame
 {
@@ -23,7 +23,7 @@ namespace MoveOnBoardGame
                      }
 
                      player.Move(direction);
-                     if(board.CollisionDetect(player.CurrX, player.CurrY))
+                     if(board.CollisionDetect(player.CurrX, player.CurrY)==CollisionType.BorderCollision)
                      {
                          break;
                      }

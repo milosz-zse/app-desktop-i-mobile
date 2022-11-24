@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MoveOnBoardGame.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -62,9 +63,24 @@ namespace MoveOnBoardGame
 
         }
 
-        public bool CollisionDetect(int x, int y)
+        public CollisionType CollisionDetect(int x, int y)
         {
-            if (y == leftCorner)//górna ściana 
+          /*  for (int i = 0; i < availableFieldsOnBoard.Count; i++)
+            {
+                if (availableFieldsOnBoard[i].X == x && availableFieldsOnBoard[i].Y==y)
+                {
+                    return false;
+                }
+            }
+            */
+            foreach (AvailableField field in availableFieldsOnBoard)
+            {
+                if (field.X == x && field.Y == y)
+                {
+                    return CollisionType.NoCollision;
+                }
+            }
+            /*     if (y == leftCorner)//górna ściana 
                 return true;
             if (x == topCorner)//lewa ściana
                 return true;
@@ -73,8 +89,8 @@ namespace MoveOnBoardGame
                 return true;
             if (x == width-1+topCorner)//gorna sciana
                 return true;
-
-            return false;
+            */
+            return CollisionType.BorderCollision;
         }
         private void CompleteAvailableFields()
         {

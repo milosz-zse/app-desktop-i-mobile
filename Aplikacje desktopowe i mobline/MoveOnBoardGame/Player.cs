@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MoveOnBoardGame.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -48,16 +49,16 @@ namespace MoveOnBoardGame
         {
             switch (direction)
             {
-                case MoveDirection.MUVE_UP:
+                case Enums.MoveDirection.MUVE_UP:
                     currY--;
                     break;
-                case MoveDirection.MOVE_DOWN:
+                case Enums.MoveDirection.MOVE_DOWN:
                     currY++;
                     break;
-                case MoveDirection.MOVE_LEFT:
+                case Enums.MoveDirection.MOVE_LEFT:
                     currX--;
                     break;
-                case MoveDirection.MOVE_RIGHT:
+                case Enums.MoveDirection.MOVE_RIGHT:
                     currX++;
                     break;
                 default:
