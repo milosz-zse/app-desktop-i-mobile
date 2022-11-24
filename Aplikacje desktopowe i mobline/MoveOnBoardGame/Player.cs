@@ -4,15 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MoveOnBoardGame 
+namespace MoveOnBoardGame
 {
-    class Player 
+    class Player
     {
-        private ConsoleColor backGroundColor = ConsoleColor.DarkMagenta;
-        private ConsoleColor foregroundColor = ConsoleColor.Black;
+        private ConsoleColor backGroundColor = ConsoleColor.DarkRed;
+        private ConsoleColor foregroundColor = ConsoleColor.Yellow;
         private char playerChar = 'O';
 
-
+        private const char moveUp = 'w';
+        private const char moveDown = 's';
+        private const char moveLeft = 'a';
+        private const char moveRight = 'd';
 
         private int currX = 1;
         private int currY = 1;
@@ -20,7 +23,6 @@ namespace MoveOnBoardGame
         private int prevX = 1;
         private int prevY = 1;
 
-        //propertis 2
         public int CurrX
         {
             get
@@ -40,22 +42,20 @@ namespace MoveOnBoardGame
             Draw();
         }
 
-        public void Move(char direction)
+        public void Move(MoveDirection direction)
         {
-            //char presKey = Console.ReadKey(true).KeyChar;
-
             switch (direction)
             {
-                case moveUp:
+                case MoveDirection.MUVE_UP:
                     currY--;
                     break;
-                case moveDown:
+                case MoveDirection.MOVE_DOWN:
                     currY++;
                     break;
-                case moveLeft:
+                case MoveDirection.MOVE_LEFT:
                     currX--;
                     break;
-                case moveRight:
+                case MoveDirection.MOVE_RIGHT:
                     currX++;
                     break;
                 default:
@@ -78,8 +78,6 @@ namespace MoveOnBoardGame
 
             prevX = currX;
             prevY = currY;
-
-            Console.ResetColor();
         }
 
     }

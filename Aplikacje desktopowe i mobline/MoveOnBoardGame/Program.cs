@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading;
 
 namespace MoveOnBoardGame
 {
@@ -7,28 +6,28 @@ namespace MoveOnBoardGame
     {
         static void Main(string[] args)
         {
-            /*
-                - gracz
-                - plansza
-                
-             */
-
             Board board = new Board();
             board.Draw();
 
             Player player = new Player();
 
-            char direction = 's';
-
+            MoveDirection direction = MoveDirection.MOVE_RIGHT;
+            
             while (true)
             {
-                player.Move();
-                if (board.CollisionDetect(player.CurrX , player.CurrY))
+                if (Console.KeyAvailable)
+                {
+                    direction = (MoveDirection)Console.ReadKey(true).KeyChar;
+                }
+
+                player.Move(direction);
+                if(board.CollisionDetect(player.CurrX, player.CurrY))
                 {
                     break;
                 }
-                Thread.Sleep(500);
+           //     Thread.Sleep(100);
             }
+
         }
     }
 }

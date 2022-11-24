@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace MoveOnBoardGame
 {
-    class MoveDirection
+    enum MoveDirection
     {
-        public  char MUVE_UP = 'w';
-        public  char MOVE_DOWN = 's';
-        public  char MOVE_LEFT = 'a';
-        public  char MOVE_RIGHT = 'd';
+          MUVE_UP = 'w',
+          MOVE_DOWN = 's',
+          MOVE_LEFT = 'a',
+          MOVE_RIGHT = 'd'
     }
 }
