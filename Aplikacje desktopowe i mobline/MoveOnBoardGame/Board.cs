@@ -16,7 +16,7 @@ namespace MoveOnBoardGame
         private ConsoleColor backGroundColor = ConsoleColor.Gray;
         private ConsoleColor foregroundColor = ConsoleColor.Yellow;
         private char borderChar = 'X';
-
+        private int percentOfStoneObstacles = 6;
         private List<AvailableField> availableFieldsOnBoard = new List<AvailableField>();
         
         public Board()
@@ -101,7 +101,7 @@ namespace MoveOnBoardGame
                     AvailableField availableField = new AvailableField();
                     availableField.X = x;
                     availableField.Y = y;
-
+                    availableField.TypeOfObstacle = TypeOfObstacle.None;
                     availableFieldsOnBoard.Add(availableField);
                 }
             }
@@ -116,6 +116,19 @@ namespace MoveOnBoardGame
             return availableField;
         }
         
+        private void GenerateRAndomObstacles()
+        {
+            int countOdObstacles = (height * width) / percentOfStoneObstacles;
 
+            Random random = new Random();
+            for (int i = 0; i < countOdObstacles; i++)
+            {
+                int randomField = random.Next(availableFieldsOnBoard.Count);
+                if (availableFieldsOnBoard[i].TypeOfObstacle == TypeOfObstacle.None)
+                {
+                    availableFieldsOnBoard[i].TypeOfObstacle = TypeOfObstacle.Stone;
+                }
+            }
+        }
     }
 }

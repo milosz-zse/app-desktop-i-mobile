@@ -27,7 +27,7 @@ namespace MoveOnBoardGame
                      {
                          break;
                      }
-                     Thread.Sleep(100);
+                     Thread.Sleep(40);
                  }
             
                  

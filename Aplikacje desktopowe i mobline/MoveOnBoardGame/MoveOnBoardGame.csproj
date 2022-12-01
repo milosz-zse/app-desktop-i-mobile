@@ -47,6 +47,7 @@
     <Compile Include="Board.cs" />
     <Compile Include="Enums\CollisionType.cs" />
     <Compile Include="Enums\MoveDirection.cs" />
+    <Compile Include="Enums\TypeOfObstacle.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
