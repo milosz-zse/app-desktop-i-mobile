@@ -40,7 +40,9 @@ namespace TestCollection
                 Console.Write(item + "  ");
             }
             Console.WriteLine("maks " + MaxForInts(listOfInts)); 
-            Console.WriteLine("maks " + MaxForDouble(listOfdouble));
+            Console.WriteLine("maks " + MaxForAllTypes<int>(listOfInts)); //automatyczne szczytanie typu(nie trzeba podawac <int> bo lista juz sie domysli ze to int)
+            Console.WriteLine("maks " + MaxForDouble(listOfdouble));  
+            Console.WriteLine("maks " + MaxForAllTypes<double>(listOfdouble));
         }
         private int MaxForInts(List<int> list)
         {
@@ -59,6 +61,19 @@ namespace TestCollection
         {
             double max = list[0];
             foreach (var item in list)
+            {
+                if (item > max)
+                {
+                    max = item;
+                }
+
+            }
+            return max;
+        }
+        private T MaxForAllTypes <T>  (List<T> list)
+        {
+            T max = list[0];
+            foreach (T item in list)
             {
                 if (item > max)
                 {
