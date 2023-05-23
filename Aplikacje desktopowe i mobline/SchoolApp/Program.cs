@@ -9,7 +9,7 @@ namespace SchoolApp
         static void Main(string[] args)
         {
             School school = new School();
-            school.Run();
+            school.Run(); 
 
         }
     }
