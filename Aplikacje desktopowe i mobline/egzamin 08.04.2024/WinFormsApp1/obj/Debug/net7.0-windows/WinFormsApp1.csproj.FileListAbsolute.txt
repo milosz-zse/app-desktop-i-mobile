@@ -1,0 +1,16 @@
+C:\MiloszMichtainc\app-desktop-i-mobile\Aplikacje desktopowe i mobline\egzamin 08.04.2024\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.Form1.resources
+C:\MiloszMichtainc\app-desktop-i-mobile\Aplikacje desktopowe i mobline\egzamin 08.04.2024\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\MiloszMichtainc\app-desktop-i-mobile\Aplikacje desktopowe i mobline\egzamin 08.04.2024\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\MiloszMichtainc\app-desktop-i-mobile\Aplikacje desktopowe i mobline\egzamin 08.04.2024\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\MiloszMichtainc\app-desktop-i-mobile\Aplikacje desktopowe i mobline\egzamin 08.04.2024\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\MiloszMichtainc\app-desktop-i-mobile\Aplikacje desktopowe i mobline\egzamin 08.04.2024\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\MiloszMichtainc\app-desktop-i-mobile\Aplikacje desktopowe i mobline\egzamin 08.04.2024\WinFormsApp1\bin\Debug\net7.0-windows\WinFormsApp1.exe
+C:\MiloszMichtainc\app-desktop-i-mobile\Aplikacje desktopowe i mobline\egzamin 08.04.2024\WinFormsApp1\bin\Debug\net7.0-windows\WinFormsApp1.deps.json
+C:\MiloszMichtainc\app-desktop-i-mobile\Aplikacje desktopowe i mobline\egzamin 08.04.2024\WinFormsApp1\bin\Debug\net7.0-windows\WinFormsApp1.runtimeconfig.json
+C:\MiloszMichtainc\app-desktop-i-mobile\Aplikacje desktopowe i mobline\egzamin 08.04.2024\WinFormsApp1\bin\Debug\net7.0-windows\WinFormsApp1.dll
+C:\MiloszMichtainc\app-desktop-i-mobile\Aplikacje desktopowe i mobline\egzamin 08.04.2024\WinFormsApp1\bin\Debug\net7.0-windows\WinFormsApp1.pdb
+C:\MiloszMichtainc\app-desktop-i-mobile\Aplikacje desktopowe i mobline\egzamin 08.04.2024\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.dll
+C:\MiloszMichtainc\app-desktop-i-mobile\Aplikacje desktopowe i mobline\egzamin 08.04.2024\WinFormsApp1\obj\Debug\net7.0-windows\refint\WinFormsApp1.dll
+C:\MiloszMichtainc\app-desktop-i-mobile\Aplikacje desktopowe i mobline\egzamin 08.04.2024\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.pdb
+C:\MiloszMichtainc\app-desktop-i-mobile\Aplikacje desktopowe i mobline\egzamin 08.04.2024\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\MiloszMichtainc\app-desktop-i-mobile\Aplikacje desktopowe i mobline\egzamin 08.04.2024\WinFormsApp1\obj\Debug\net7.0-windows\ref\WinFormsApp1.dll
